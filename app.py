@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 from langchain.prompts import PromptTemplate
-from langchain.chains.llm import LLMChains
 from langchain.chat_models import ChatOpenAI
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableBranch
@@ -17,7 +16,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
+API_KEY = os.getenv('OPENAI_API_KEY')
+
+os.environ['OPENAI_API_KEY'] = API_KEY
 
 st.set_page_config(
     page_title="Exam Prep Question Generator",
