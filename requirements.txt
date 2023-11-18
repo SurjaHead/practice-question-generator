@@ -2,3 +2,4 @@ langchain
 typing
 python-dotenv
 streamlit
+openai
