@@ -1,4 +1,4 @@
 langchain
 typing
-dotenv
+python-dotenv
 streamlit
