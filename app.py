@@ -1,9 +1,7 @@
 import os
-
-from apikey import API_KEY
 import streamlit as st
 from langchain.prompts import PromptTemplate
-from langchain.chains.llm import LLMChain
+from langchain.chains.llm import LLMChains
 from langchain.chat_models import ChatOpenAI
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableBranch
@@ -17,7 +15,6 @@ from langchain.schema.runnable import RunnablePassthrough
 from dotenv import load_dotenv
 
 load_dotenv()
-
 
 
 os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
