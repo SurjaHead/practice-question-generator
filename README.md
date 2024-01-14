@@ -1,4 +1,4 @@
-# langchain-question-generator
+# 🦜🔗Langchain Question Generator
 Generates questions for engineering subjects to help students prepare for their exams.
 
 To use the app, run:
